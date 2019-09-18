@@ -1,0 +1,25 @@
+{
+  "name": "zig-zag-smart-contract",
+  "private": true,
+  "version": "1.0.0",
+  "license": "UNLICENSED",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "scripts/build.sh",
+    "test": "jest --runInBand --config=./jest.json",
+    "pretest": "scripts/build.sh",
+    "posttest": "scripts/node-stop.sh"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.9",
+    "@types/node": "^11.9.5",
+    "big.js": "^5.2.2",
+    "eosjs": "^16.0.9",
+    "jest": "^24.8.0",
+    "ts-jest": "^24.0.2",
+    "ts-node": "^8.2.0",
+    "typescript": "^3.3.3333"
+  },
+  "dependencies": {}
+}
